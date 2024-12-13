@@ -3,9 +3,9 @@
 {% block body %}
 <main class="main">
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl position-relative mb-5 d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Kenya<span>Rentals</span></h1>
@@ -19,24 +19,28 @@
 
     </div>
   </header>
-<h2 class="text-center">New Properties</h2>
+<div class="pt-5">
+<h2 class="text-center mt-5">New Properties</h2>
 <div class="container">
 <div style="display: flex; justify-content:space-between; flex-wrap: wrap">
-    {% for house in property %}
+    {% for image in images %}
         <div class="col mb-2">
-            <img src="{{ house.house.url }}" alt="Uploaded Image" style="width: 300px;height:300px"> <br>
-            <p><strong>Rent :</strong>{{ house.rent }}</p>
-            <p><strong>Title :</strong>{{ house.title }}</p>
-            <p><strong>Area :</strong>{{ house.area }}</p>
-            <p><strong>Beds :</strong>{{ house.beds }}</p>
-            <p><strong>Bathrooms :</strong>{{ house.baths }}</p>
-            <p><strong>Garage :</strong>{{ house.garage }}</p>
+            <img src="{{ image.image.url }}" alt="Uploaded Image" style="width: 300px;height:300px"> <br>
+            <p><strong>Rent :</strong>{{ image.rent }}</p>
+            <p><strong>Title :</strong>{{ image.title }}</p>
+            <p><strong>Area :</strong>{{ image.area }}</p>
+            <p><strong>Beds :</strong>{{ image.beds }}</p>
+            <p><strong>Bathrooms :</strong>{{ image.baths }}</p>
+            <p><strong>Garage :</strong>{{ image.garage }}</p>
+            <a href="/housedelete/{{ image.id }}" class="btn btn-outline-danger">DELETE</a>
+            <a href="/houseedit/{{ image.id }}" class="btn btn-outline-danger">EDIT</a>
         </div>
 
     {% endfor %}
 
 </div>
 
+</div>
 </div>
 </main>
 {% endblock %}

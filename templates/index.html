@@ -82,9 +82,9 @@
           <img src="{% static "assets/img/hero-carousel/hero-carousel-2.jpg" %}" alt="">
           <div class="carousel-container">
             <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Venda Road Five</h2>
-              <a href="property-single.html" class="btn-get-started">sale | $ 356.000</a>
+              <p>Muthaiga, Kiambu</p>
+              <h2> Thika Road</h2>
+              <a href="property-single.html" class="btn-get-started">Rent | Ksh 350,000</a>
             </div>
           </div>
         </div><!-- End Carousel Item -->
@@ -93,9 +93,9 @@
           <img src="{% static "assets/img/hero-carousel/hero-carousel-3.jpg" %}" alt="">
           <div class="carousel-container">
             <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Vitra Road three</h2>
-              <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a>
+              <p>Siaya Place, Kileleshwa</p>
+              <h2><span></span> Lavington Road</h2>
+              <a href="property-single.html" class="btn-get-started">Rent | Ksh 200,000</a>
             </div>
           </div>
         </div><!-- End Carousel Item -->
@@ -120,7 +120,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Listed below are some of the services offered by our real estate agency</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -133,9 +133,10 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Property Buying and Selling</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>We assist clients in buying or selling residential, commercial, or industrial properties.
+We also do market analysis, pricing strategy, and negotiation on behalf of clients.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -144,10 +145,10 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Property Management</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Overseeing rental properties, handling tenants, collecting rent, and coordinating maintenance or repairs.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -156,10 +157,10 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Real Estate Marketing</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Creating listings, staging properties for viewings, online and offline advertising, and organizing open houses.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -168,11 +169,11 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Tenant Representation</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Helping tenants find suitable rental properties and negotiating lease terms on their behalf.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -181,11 +182,12 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Consultation and Advisory Services</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Providing advice on real estate investment, market trends, and financing options.
+              Assisting with zoning laws, legal compliance, and property valuation.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -194,11 +196,12 @@
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Development and Project Management</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Working with developers to plan, design, and execute construction projects.
+              Coordinating with architects, contractors, and municipal authorities to ensure projects meet deadlines and regulations.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -214,7 +217,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Agents</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Get in touch with any one of our agents listed below to consult on any of our services</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -281,7 +284,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>This is what some of the clients we have worked with before have to say</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -320,12 +323,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  “Finding our dream home felt like an overwhelming task until we met the team at Kenya Rentals. They listened to our needs, guided us every step of the way, and made the entire process stress-free. We couldn’t be happier with our new home and the exceptional service we received!”
                 </p>
                 <div class="profile mt-auto">
                   <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
                   <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
+                  <h4>Home Buyer</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -336,12 +339,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  “Selling our property was a breeze thanks to Kenya Rentals. Their marketing strategies were top-notch, and they kept us informed at every stage. We got a great offer in record time! Highly recommend their expertise and professionalism.”
                 </p>
                 <div class="profile mt-auto">
                   <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
                   <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+                  <h4>Property Seller</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -352,12 +355,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  “As a first-time property investor, I had so many questions and concerns. The team at Kenya Rentals provided clear advice, detailed market insights, and helped me find a fantastic property. Their expertise gave me confidence throughout the entire process.”
                 </p>
                 <div class="profile mt-auto">
                   <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
                   <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
+                  <h4>Property Investor</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -368,12 +371,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  “Finding a rental property that suited my budget and preferences felt impossible until I connected with Kenya Rentals. They found the perfect place for me and handled all the lease paperwork quickly and efficiently. I couldn’t have asked for a better experience!”
                 </p>
                 <div class="profile mt-auto">
                   <img src="{% static "assets/img/testimonials/testimonials-4.jpg" %}" class="testimonial-img" alt="">
                   <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
+                  <h4>Tenant</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -384,12 +387,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  "Partnering with Kenya Rentals to manage my rental property has been a game-changer. They handle everything—from finding reliable tenants to ensuring timely maintenance—while keeping me in the loop. I can finally enjoy the benefits of property ownership without the hassle!"
                 </p>
                 <div class="profile mt-auto">
                   <img src="{% static "assets/img/testimonials/testimonials-5.jpg" %}" class="testimonial-img" alt="">
                   <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
+                  <h4>Landlord</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -412,8 +415,8 @@
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
             <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Ngong' Road</p>
+            <p>Kilimani, Peace Suites 6</p>
             <p></p>
           </div>
 
@@ -424,8 +427,8 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Phone:</strong> <span>+254790931766</span><br>
+              <strong>Email:</strong> <span>info@krentals.co.ke</span><br>
             </p>
           </div>
         </div>
@@ -455,13 +458,13 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">EstateAgency</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">KenyaRentals</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="www.apensoftwares.co.ke">Apen Softwares</a>
       </div>
     </div>
 

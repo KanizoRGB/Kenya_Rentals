@@ -1,5 +1,6 @@
 from django import forms
 from rentalsapp.models import ImageModel
+
 class ImageUploadForm(forms.ModelForm):
     class Meta:
         model = ImageModel

@@ -65,23 +65,14 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Services</h1>
-              <p class="mb-0">We will help you find your dream house in your desired location. Let us help you eliminate the
-              hustle of walking thousands of kilometers without getting a house that meets your specifications</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Services Section -->
+      <!-- Services Section -->
     <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title pt-5" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>Listed below are some of the services offered by our real estate agency</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -93,9 +84,10 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="service-details.html" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>Property Buying and Selling</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>We assist clients in buying or selling residential, commercial, or industrial properties.
+We also do market analysis, pricing strategy, and negotiation on behalf of clients.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -104,10 +96,10 @@
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Property Management</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Overseeing rental properties, handling tenants, collecting rent, and coordinating maintenance or repairs.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -116,10 +108,10 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Ledo Markt</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Real Estate Marketing</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Creating listings, staging properties for viewings, online and offline advertising, and organizing open houses.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -128,11 +120,11 @@
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Tenant Representation</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Helping tenants find suitable rental properties and negotiating lease terms on their behalf.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -141,11 +133,12 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Consultation and Advisory Services</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Providing advice on real estate investment, market trends, and financing options.
+              Assisting with zoning laws, legal compliance, and property valuation.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -154,11 +147,12 @@
               <div class="icon">
                 <i class="bi bi-chat-square-text"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Development and Project Management</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <p>Working with developers to plan, design, and execute construction projects.
+              Coordinating with architects, contractors, and municipal authorities to ensure projects meet deadlines and regulations.</p>
+              <a href="{% url 'services' %}" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -167,7 +161,6 @@
       </div>
 
     </section><!-- /Services Section -->
-
   </main>
 
   <footer id="footer" class="footer light-background">
@@ -178,8 +171,8 @@
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
             <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Ngong' Road</p>
+            <p>Kilimani, Peace Suites 6</p>
             <p></p>
           </div>
 
@@ -190,8 +183,8 @@
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Phone:</strong> <span>+254790931766</span><br>
+              <strong>Email:</strong> <span>info@krentals.co.ke</span><br>
             </p>
           </div>
         </div>
@@ -221,13 +214,13 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">EstateAgency</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">KenyaRentals</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="www.apensoftwares.co.ke">Apen Softwares</a>
       </div>
     </div>
 
