@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-3((@)%ozrl=_$)26zw(%pr_fi7o4u)tp#0k^7*650f!_*15k+9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kenya-rentals.onrender.com']
 
 
 # Application definition
