@@ -39,6 +39,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['kenya-rentals.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://kenya-rentals.onrender.com',
+]
+
 
 # Application definition
 
