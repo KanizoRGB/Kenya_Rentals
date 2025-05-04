@@ -12,9 +12,20 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+# Load environment variables from .env file
+load_dotenv(os.path.join(BASE_DIR, '.env'))
+
+#Now we can access the environment variables using os.getenv()
+# Example: consumer_key = os.getenv('CONSUMER_KEY')
+
+consumer_key = os.getenv('consumer_key')
+consumer_secret = os.getenv('consumer_secret')
 
 
 # Quick-start development settings - unsuitable for production
